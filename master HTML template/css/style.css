@@ -84,19 +84,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body { background-color: #f3c5a0;}
-
-img {max-width: 100%;}
-
-#main_container {max-width: 1100px; margin: 0 auto; 
-  text-emphasis-color: rgb(35, 21, 0); font-size: 20px;
-}
-
-#portrait img {max-width: 50%; float: left;
-  padding-right: 5%;
-}
-
-#heading {font-size: 75px; text-emphasis-color: rgb(35, 21, 0); margin: 0 auto;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
