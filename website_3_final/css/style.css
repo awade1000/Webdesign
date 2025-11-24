@@ -83,83 +83,137 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{padding: 0; margin: 0;}
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+  
+/* containers*/
 
-/*
- * Hide visually and from screen readers
- */
+#header-container {
+    max-width: 100%; 
+    background-color: #1f1f1f;}
 
-.hidden,
-[hidden] {
-  display: none !important;
+#main {
+  max-width: 80%;
+  background-color: #1f1f1f;
+  margin: 0 auto;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+#main2 {
+  max-width: 80%;
+  background-color: white;
+  margin: 0 auto;
 }
 
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+#error {
+  max-width: 50%;
+  background-color: #fff8f8;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+.flexbox-container {
+  display: flex;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
+#column1 {width: 30%; padding: 3%;}
+#column2 {width: 30%; padding: 3%;}
+#column3 {width: 30%; padding: 3%;}
 
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+/* images*/
+
+#banner-logo {
+    display: flex; 
+    justify-content: center;
+
+    & img {
+      width: 80vw;
+
+    }
+  }
+
+#ad-image {
+  max-width: 30vw;
+    display: flex; 
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+
+    & img {
+      width: 80vw;
+    }
 }
 
-.clearfix::after {
-  clear: both;
+#gif {
+    display: flex;
+    justify-content: center;
+    & img {
+      width: 25vw;
+    }
+  }
+#shirts {
+  max-width: 5vw;
+    display: flex; 
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+
+    & img {
+      width: 20vw;
+    }
 }
+
+/* text*/
+
+#sub-heading {
+  font-size: xx-large;
+  text-align: center;
+}
+
+#sub-heading-2 {
+  font-size: large;
+  text-align: center;
+  color: white;
+}
+
+#fill {
+  font-size:small;
+  text-align: center;
+  color: white;
+}
+
+#heading {
+  font-size: 5rem;
+  text-align: center;
+}
+/* navigation*/
+
+/* the drop down menu! */ nav { text-align: center;
+word-spacing: 0em; font-size: .75em; position: sticky; top: 0;
+}
+nav a:link, nav a:visited { text-decoration: none;
+color: inherit; }
+ul#topnav li {
+color: white;
+line-height: 3;
+background-color: #1f1f1f; display: inline-block;
+width: 11em;
+word-spacing: 0;
+transition: background .2s ease-in;
+}
+ul#topnav li:hover {
+color: #1f1f1f; background-color: white; z-index: 10;
+}
+/* drop-down menu section */ ul#subnav {
+position: absolute; left: -1000em; width: inherit; padding: 0;
+opacity: 0; }
+ul#subnav li { width:100%; line-height: inherit; font-size: inherit;
+}
+li:hover ul#subnav { left: auto;
+opacity: 1;
+/* here endeth the drop-down menu */
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
